@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Doctor — Master Any Vocabulary with AI</title>
+    <meta name="description" content="Build personalized vocabulary lists for any language or subject. AI-powered enrichment and spaced repetition to make words stick forever.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="brand">
+                <span class="brand-icon">🩺</span>
+                <span class="brand-name">Vocab Doctor</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <div class="pill-badge">
+                        <span class="pulse-dot"></span>
+                        AI-Powered Learning · Free to Download
+                    </div>
+                    <h1 class="hero-title">
+                        The smartest way to
+                        <span class="highlight">master vocabulary</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Build personalized vocab lists for any language or subject. Claude AI enriches every word with examples, pronunciations, and memory tips — then spaced repetition locks them in forever.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#download" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zm-3.02-13.03c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </a>
+                        <a href="#download" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2l12.35-12.35L13.06 8.25 3.18 23.76zM20.75 10.3L18.2 8.85l-2.94 2.94 2.94 2.94 2.58-1.47a1.53 1.53 0 0 0 0-2.96zM2.01 1.31a1.5 1.5 0 0 0-.01.25v20.88c0 .09 0 .17.01.25l.07.07L14.42 10.4v-.3L2.08 1.24l-.07.07z"/></svg>
+                            Google Play
+                        </a>
+                    </div>
+                    <div class="social-proof">
+                        <div class="avatars">
+                            <img src="https://i.pravatar.cc/32?img=1" alt="">
+                            <img src="https://i.pravatar.cc/32?img=2" alt="">
+                            <img src="https://i.pravatar.cc/32?img=3" alt="">
+                            <img src="https://i.pravatar.cc/32?img=4" alt="">
+                        </div>
+                        <p><strong>10,000+</strong> learners already improving daily</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-shell">
+                        <div class="phone-screen">
+                            <div class="phone-header">
+                                <span class="phone-logo">🩺</span>
+                                <span>Vocab Doctor</span>
+                                <span class="streak-chip">🔥 14</span>
+                            </div>
+                            <div class="flip-card-wrap">
+                                <div class="flip-card" id="flipCard">
+                                    <div class="flip-front">
+                                        <div class="card-tag" id="cardTag">🌍 Spanish</div>
+                                        <div class="card-word" id="cardWord">serendipia</div>
+                                        <div class="card-hint">Tap to reveal</div>
+                                    </div>
+                                    <div class="flip-back">
+                                        <div class="card-def" id="cardDef">A pleasant discovery made by chance</div>
+                                        <div class="card-example" id="cardEx">"Fue pura serendipia encontrarte aquí."</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="rate-row">
+                                <button class="rate-btn rate-hard">Hard</button>
+                                <button class="rate-btn rate-ok">Good</button>
+                                <button class="rate-btn rate-easy">Easy</button>
+                            </div>
+                            <div class="mini-stats">
+                                <div class="mini-stat"><div class="mini-num">82%</div><div class="mini-lbl">Mastery</div></div>
+                                <div class="mini-stat"><div class="mini-num">247</div><div class="mini-lbl">Words</div></div>
+                                <div class="mini-stat"><div class="mini-num">4.9★</div><div class="mini-lbl">Rating</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-chip chip-ai">
+                        <span>🤖</span> AI enriched
+                    </div>
+                    <div class="float-chip chip-streak">
+                        <span>🔥</span> 14-day streak
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logos / Trust -->
+    <section class="trust">
+        <div class="container">
+            <p class="trust-label">Works for every language &amp; subject</p>
+            <div class="subject-chips">
+                <span>🌍 Spanish</span>
+                <span>🗾 Japanese</span>
+                <span>🇫🇷 French</span>
+                <span>🩺 Medical</span>
+                <span>⚖️ Legal</span>
+                <span>📊 Finance</span>
+                <span>🔬 Science</span>
+                <span>📚 Academic</span>
+                <span>🇩🇪 German</span>
+                <span>🌐 Arabic</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Features</div>
+                <h2 class="section-title">Everything you need to learn faster</h2>
+                <p class="section-desc">From your first word to lifelong mastery — Vocab Doctor has every tool you need.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card card-large reveal">
+                    <div class="feature-icon-wrap purple">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>AI-Powered Enrichment</h3>
+                    <p>Instantly generate pronunciation guides, root letters, example sentences, and memory tips for any word using Claude AI — in any language.</p>
+                    <div class="feature-demo">
+                        <div class="ai-chip">🤖 AI</div>
+                        <span class="ai-example">ephemeral → "epi (upon) + hemera (day)"</span>
+                    </div>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636-.707.707M21 12h-1M17.657 17.657l-.707-.707M12 21v-1m-5.657-2.343-.707.707M3 12H2M6.343 6.343l-.707-.707"/><circle cx="12" cy="12" r="4"/></svg>
+                    </div>
+                    <h3>Spaced Repetition</h3>
+                    <p>Our SM-2 algorithm reviews words at the perfect moment — just before you forget — so you retain vocabulary for life with minimal study time.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap green">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                    </div>
+                    <h3>Multiple Study Modes</h3>
+                    <p>Flip cards, multiple-choice quizzes, deep study challenges — both word-to-definition and definition-to-word directions.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap orange">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    </div>
+                    <h3>Streak Tracking</h3>
+                    <p>Build a daily learning habit and watch your mastery scores climb. Streaks, badges, and milestones keep you motivated every day.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrap pink">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+                    </div>
+                    <h3>Speak &amp; Listen</h3>
+                    <p>Hear correct pronunciations with text-to-speech. Practice speaking and get instant pronunciation feedback in real time.</p>
+                </div>
+                <div class="feature-card card-large reveal">
+                    <div class="feature-icon-wrap teal">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 1 0-.1-9.999 5.002 5.002 0 0 0-9.78 2.096A4.001 4.001 0 0 0 3 15z"/></svg>
+                    </div>
+                    <h3>Cloud Sync &amp; Sharing</h3>
+                    <p>Your vocabulary lists sync across all devices. Share categories with classmates or study partners to supercharge learning together.</p>
+                    <div class="feature-demo">
+                        <div class="sync-icons">
+                            <span>📱</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <span>💻</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            <span>⌚</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">How It Works</div>
+                <h2 class="section-title">From zero to fluent in 3 steps</h2>
+                <p class="section-desc">Getting started takes less than 2 minutes.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-icon">📝</div>
+                    <h3>Build Your List</h3>
+                    <p>Add any words you want to learn — type them in or import from a file. Create lists for languages, exams, or any subject.</p>
+                </div>
+                <div class="step-arrow reveal">→</div>
+                <div class="step reveal">
+                    <div class="step-num">02</div>
+                    <div class="step-icon">🤖</div>
+                    <h3>AI Enriches It</h3>
+                    <p>Claude AI instantly adds definitions, example sentences, root word breakdowns, and memorable mnemonics to every word.</p>
+                </div>
+                <div class="step-arrow reveal">→</div>
+                <div class="step reveal">
+                    <div class="step-num">03</div>
+                    <div class="step-icon">🧠</div>
+                    <h3>Study &amp; Master</h3>
+                    <p>Practice with flip cards, quizzes, and listening exercises. Spaced repetition schedules reviews so words stick for life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-block reveal">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Languages Supported</div>
+                </div>
+                <div class="stat-block reveal">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Active Learners</div>
+                </div>
+                <div class="stat-block reveal">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Retention Rate</div>
+                </div>
+                <div class="stat-block reveal">
+                    <div class="stat-number" data-target="4.9">0</div>
+                    <div class="stat-suffix">★</div>
+                    <div class="stat-label">App Store Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Reviews</div>
+                <h2 class="section-title">Loved by learners worldwide</h2>
+                <p class="section-desc">Real people, real results.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="tcard reveal">
+                    <div class="tcard-stars">★★★★★</div>
+                    <p>"The AI enrichment is incredible. I'm learning medical terminology for nursing school and the root word breakdowns have completely changed how I remember things."</p>
+                    <div class="tcard-author">
+                        <img src="https://i.pravatar.cc/48?img=5" alt="">
+                        <div>
+                            <strong>Maria Chen</strong>
+                            <span>Nursing Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcard reveal">
+                    <div class="tcard-stars">★★★★★</div>
+                    <p>"I've tried Anki, Duolingo, Quizlet — nothing stuck. Vocab Doctor's spaced repetition actually adapts to how I learn. My Japanese kanji retention is insane now."</p>
+                    <div class="tcard-author">
+                        <img src="https://i.pravatar.cc/48?img=8" alt="">
+                        <div>
+                            <strong>James Okafor</strong>
+                            <span>Language Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tcard reveal">
+                    <div class="tcard-stars">★★★★★</div>
+                    <p>"As a law student, I needed to learn hundreds of Latin terms fast. Vocab Doctor not only defined them but gave me perfect context sentences. Passed the bar on first attempt!"</p>
+                    <div class="tcard-author">
+                        <img src="https://i.pravatar.cc/48?img=11" alt="">
+                        <div>
+                            <strong>Sofia Reyes</strong>
+                            <span>Law Graduate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-inner reveal">
+                <div class="download-copy">
+                    <h2>Start learning today.<br>It's free.</h2>
+                    <p>Free on iOS and Android. Upgrade to Pro for unlimited AI enrichment and advanced analytics.</p>
+                    <div class="download-btns">
+                        <a href="#" class="store-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zm-3.02-13.03c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            <div>
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2l12.35-12.35L13.06 8.25 3.18 23.76zM20.75 10.3L18.2 8.85l-2.94 2.94 2.94 2.94 2.58-1.47a1.53 1.53 0 0 0 0-2.96zM2.01 1.31a1.5 1.5 0 0 0-.01.25v20.88c0 .09 0 .17.01.25l.07.07L14.42 10.4v-.3L2.08 1.24l-.07.07z"/></svg>
+                            <div>
+                                <small>Get it on</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <div class="qr-placeholder">
+                        <div class="qr-inner">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h1v1h-1zM18 14h1v1h-1zM14 18h1v1h-1zM18 18h1v1h-1zM16 16h1v1h-1z"/></svg>
+                        </div>
+                        <p>Scan to download</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="brand">
+                        <span class="brand-icon">🩺</span>
+                        <span class="brand-name">Vocab Doctor</span>
+                    </a>
+                    <p>Master any vocabulary, powered by AI.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#download">Download</a>
+                    </div>
+                    <div>
+                        <h4>Support</h4>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                    <div>
+                        <h4>Connect</h4>
+                        <a href="#">Twitter / X</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vocab Doctor. All rights reserved.</p>
+                <p>Made with ❤️ for learners everywhere.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
